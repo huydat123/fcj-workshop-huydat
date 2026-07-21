@@ -10,7 +10,7 @@ pre: " <b> 5.3. </b> "
 
 Cognito cung cấp đăng ký, đăng nhập, xác thực JWT và phân quyền `user/admin` cho Vertex-IntervAI.
 
-![Cognito flow](/images/5-Workshop/vertex-intervai/cognito-flow.svg)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/cogtigo5_3.svg)
 
 #### Thành phần cần tạo
 

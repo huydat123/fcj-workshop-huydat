@@ -10,7 +10,7 @@ pre: " <b> 5.3. </b> "
 
 Cognito provides sign-up, sign-in, JWT authentication, and `user/admin` authorization for Vertex-IntervAI.
 
-![Cognito flow](/images/5-Workshop/service-image/cogtigo5_3.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/cogtigo5_3.svg)
 
 #### Components to create
 
