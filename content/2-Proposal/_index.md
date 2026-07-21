@@ -52,7 +52,7 @@ The project aims to deliver a practical AI interview training system with the fo
 
 The architecture separates the frontend, authentication layer, API layer, storage layer, AI services, and monitoring layer. The frontend communicates with API Gateway endpoints and passes Cognito JWT tokens for protected operations. API Gateway invokes Lambda functions, which coordinate with S3, DynamoDB, Bedrock, Polly, and Transcribe.
 
-![Vertex-IntervAI architecture](/fcj-workshop-huydat/images/2-Proposal/vertex-intervai-architecture.svg)
+![Vertex-IntervAI architecture](/fcj-workshop-huydat/images/2-Proposal/vertex-intervai-architecture.png)
 
 ### AWS Services Used
 
@@ -99,15 +99,16 @@ The workshop implementation is divided into service-based stages:
 
 ### 7. Timeline and Milestones
 
-| Phase | Duration | Deliverables |
-| --- | --- | --- |
-| Planning and research | Week 1-2 | Requirement analysis, AWS service selection, architecture draft. |
-| Authentication and storage | Week 3-4 | Cognito, S3, DynamoDB, basic environment configuration. |
-| Backend APIs | Week 5-6 | Lambda functions, API Gateway routes, CORS, JWT protection. |
-| AI interview features | Week 7-8 | CV analysis, question generation, answer scoring with Bedrock. |
-| Voice and admin features | Week 9-10 | Polly, Transcribe, admin console, audit and export features. |
-| Deployment and testing | Week 11 | Amplify deployment, end-to-end testing, bug fixing. |
-| Documentation and final demo | Week 12 | Workshop content, report pages, final demo, cleanup guide. |
+The implementation worklog covers 6 working weeks. In the overall project timeline, Worklog Week 1 starts at Project Week 7, after the initial research and proposal preparation phase.
+
+| Project week | Worklog week | Main focus | Milestones |
+| --- | --- | --- | --- |
+| Week 7 |  Project initialization and architecture design | Analyze requirements, create the React project, build basic routing and page layout, design DynamoDB schemas, prepare S3 storage, define the AI workflow, and draft the AWS architecture checklist. |
+| Week 8 |  Authentication, CV upload, and storage | Complete Login UI, integrate Cognito Hosted UI, build drag-and-drop CV upload, create `upload_cv` Lambda, store files in S3, save CV metadata in DynamoDB, and configure callback/logout URLs. |
+| Week 9 |  CV analysis and dashboard | Build Dashboard data views, create `analyze_cv` Lambda, read CV files from S3, analyze CV content with Bedrock/Nova Lite, store extracted skills/projects/experience, and protect APIs with Cognito JWT authorizer. |
+| Week 10 |  AI interview and answer scoring | Build the AI Interview page, create interview sessions, generate questions from CV and role, save answers, score responses, return feedback and suggested answers, and calculate the final interview score. |
+| Week 11 |  Voice, history, profile, settings, and admin | Add History, Profile, and Settings pages, implement `history_api` and `profile_api`, integrate Polly and Transcribe for voice, build Admin Console, export CSV data, and prepare feedback email workflow. |
+| Week 12 |  Testing, deployment, documentation, and demo | Polish UI, test responsive layout, verify API Gateway/Lambda/DynamoDB/IAM/CORS, improve AI prompts and scoring, prepare deployment guide, capture screenshots, finalize worklog, and complete the demo checklist. |
 
 ### 8. Budget Estimation
 
