@@ -8,9 +8,8 @@ pre: " <b> 5.6. </b> "
 
 #### Mục tiêu
 
-Triển khai các Lambda backend trong thư mục `backend/`. Mỗi Lambda xử lý một nhóm chức năng riêng để dễ debug và mở rộng.
+Triển khai các Lambda backend trong thư mục backend/. Mỗi Lambda xử lý một nhóm chức năng riêng để dễ debug và mở rộng.
 
-![Lambda routes](/images/5-Workshop/vertex-intervai/lambda-routes.svg)
 
 #### Danh sách Lambda
 

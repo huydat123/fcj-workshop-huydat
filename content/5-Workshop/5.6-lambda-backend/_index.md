@@ -8,9 +8,8 @@ pre: " <b> 5.6. </b> "
 
 #### Goal
 
-Deploy backend Lambdas from the `backend/` folder. Each Lambda handles one feature group for easier debugging and scaling.
+Deploy backend Lambdas from the backend/ folder. Each Lambda handles one feature group for easier debugging and scaling.
 
-![Lambda routes](/images/5-Workshop/vertex-intervai/lambda-routes.svg)
 
 #### Lambda list
 

@@ -9,19 +9,19 @@ pre: " <b> 5.6.1. </b> "
 #### Deploy `upload_cv`
 
 1. Create Lambda `upload_cv`.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_561.png)
 2. Runtime: Python 3.12.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_561.png)
 3. Copy code from:
 
 ```text
 backend/upload_cv/lambda_function.py
 ```
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_561.png)
 
 4. Add environment variables:
 
-```text
-CVS_TABLE=CVs
-STORAGE_BUCKET=talent-graph-ai-storage-huydat
-```
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3_561.png)
 
 5. IAM needs `s3:PutObject`, `dynamodb:PutItem`.
 

@@ -10,12 +10,13 @@ pre: " <b> 5.5. </b> "
 
 DynamoDB is the main database of the system, storing user profiles, CV metadata, and interview data.
 
-![Storage model](/images/5-Workshop/vertex-intervai/storage-model.svg)
+
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.5.png)
 
 #### Tables to deploy
 
 | Table | Partition key | Sort key | Content |
 | --- | --- | --- | --- |
-| `Users` | `userId` | None | Profile, fullname, email, phone, avatar, role. |
-| `CVs` | `userId` | `cvId` | File metadata, status, skills, summary, suggested role. |
-| `Interviews` | `userId` | `interviewId` | Questions, answers, score, feedback, status, role. |
+| Users | userId | None | Profile, fullname, email, phone, avatar, role. |
+| CVs | userId | cvId | File metadata, status, skills, summary, suggested role. |
+| Interviews | userId | interviewId | Questions, answers, score, feedback, status, role. |
