@@ -11,12 +11,15 @@ pre: " <b> 5.3.1. </b> "
 1. Vào **Amazon Cognito** -> **User pools**.
 ![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_531.png)
 2. Chọn **Create user pool**.
+
 3. Ở phần Define your application, chọn **Traditional web application**.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_531.png)
 4. Bật các thuộc tính cần dùng:
    * email
    * name`
    * phone_number
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_531.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3_531.png)
+
 5. Chọn gửi mã xác nhận qua email.
 ![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_531.png)
 

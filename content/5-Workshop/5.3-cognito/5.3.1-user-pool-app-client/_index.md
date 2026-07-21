@@ -34,7 +34,9 @@ pre: " <b> 5.3.1. </b> "
 #### Create App Client
 
 1. In the User Pool, open **App clients**.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/4_531.png)
 2. Choose **Create app client**.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.531.png)
 3. Select a web application client type.
 4. Do not enable client secret for a React SPA.
 5. Copy the **App client ID** for:

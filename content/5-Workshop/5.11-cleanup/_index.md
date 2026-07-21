@@ -10,7 +10,6 @@ pre: " <b> 5.11. </b> "
 
 Delete or disable unused resources after the demo to avoid unnecessary cost.
 
-![Operations and cleanup](/images/5-Workshop/vertex-intervai/operations-cleanup.svg)
 
 #### Cleanup checklist
 

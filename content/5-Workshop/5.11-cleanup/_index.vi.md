@@ -10,7 +10,7 @@ pre: " <b> 5.11. </b> "
 
 Xóa hoặc tắt tài nguyên không còn dùng sau demo để tránh phát sinh chi phí.
 
-![Operations and cleanup](/images/5-Workshop/vertex-intervai/operations-cleanup.svg)
+
 
 #### Checklist dọn dẹp
 
