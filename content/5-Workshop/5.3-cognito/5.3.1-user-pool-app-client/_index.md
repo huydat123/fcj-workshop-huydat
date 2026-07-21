@@ -9,13 +9,23 @@ pre: " <b> 5.3.1. </b> "
 #### Create User Pool
 
 1. Open **Amazon Cognito** -> **User pools**.
+
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_531.png)
+
 2. Choose **Create user pool**.
-3. For sign-in options, choose **Email**.
+
+3. For Define your application options, choose **Traditional web application**.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194652.png)
 4. Enable required attributes:
-   * `email`
-   * `name`
-   * `phone_number`
+   * email
+   * name
+   * phone_number
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
+
 5. Use email verification.
+
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
+
 6. Create the User Pool.
 
 #### Create App Client

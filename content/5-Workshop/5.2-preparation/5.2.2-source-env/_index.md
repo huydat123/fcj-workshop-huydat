@@ -15,38 +15,16 @@ frontend/
 backend/
 ```
 
-The `backend/` folder contains these Lambdas:
+The backend/ folder contains these Lambdas:
 
-```text
-upload_cv
-analyze_cv
-profile_api
-history_api
-create_interview
-submit_answer
-polly_speech
-transcribe_audio
-admin_api
-```
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/lampda522.png)
 
 #### Frontend environment variables
 
-`frontend/.env` needs API endpoints and Cognito config:
+frontend/.env needs API endpoints and Cognito config:
 
-```text
-VITE_UPLOAD_CV_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>/upload_cv
-VITE_ANALYZE_CV_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>/analyze_cv
-VITE_PROFILE_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>/profile
-VITE_HISTORY_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>/history
-VITE_INTERVIEW_API_BASE_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>
-VITE_VOICE_API_BASE_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>
-VITE_ADMIN_API_BASE_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>
-VITE_COGNITO_DOMAIN=https://<domain>.auth.<region>.amazoncognito.com
-VITE_COGNITO_CLIENT_ID=<app-client-id>
-VITE_COGNITO_REDIRECT_URI=http://localhost:5173
-VITE_COGNITO_LOGOUT_URI=http://localhost:5173
-VITE_COGNITO_SCOPES=openid email profile phone
-```
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/lmoitruong522.png)
+
 
 #### Local check
 
@@ -56,4 +34,4 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` to verify the UI before deploying to Amplify.
+Can run `http://localhost:5173` to verify the UI before deploying to Amplify.

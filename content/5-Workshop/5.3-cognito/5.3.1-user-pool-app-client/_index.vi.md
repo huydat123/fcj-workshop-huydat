@@ -9,13 +9,16 @@ pre: " <b> 5.3.1. </b> "
 #### Tạo User Pool
 
 1. Vào **Amazon Cognito** -> **User pools**.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194652.png)
 2. Chọn **Create user pool**.
-3. Ở phần sign-in options, chọn **Email**.
+3. Ở phần Define your application, chọn **Traditional web application**.
 4. Bật các thuộc tính cần dùng:
-   * `email`
-   * `name`
-   * `phone_number`
+   * email
+   * name`
+   * phone_number
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
 5. Chọn gửi mã xác nhận qua email.
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
 6. Tạo User Pool.
 
 #### Tạo App Client
