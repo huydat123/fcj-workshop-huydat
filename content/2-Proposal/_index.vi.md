@@ -99,15 +99,16 @@ Workshop được chia theo từng giai đoạn triển khai dịch vụ:
 
 ### 7. Lộ trình và mốc triển khai
 
-| Giai đoạn | Thời gian | Kết quả |
-| --- | --- | --- |
-| Lập kế hoạch và nghiên cứu | Tuần 1-2 | Phân tích yêu cầu, chọn dịch vụ AWS, phác thảo kiến trúc. |
-| Xác thực và lưu trữ | Tuần 3-4 | Cognito, S3, DynamoDB và cấu hình môi trường cơ bản. |
-| Backend API | Tuần 5-6 | Lambda functions, API Gateway routes, CORS và JWT protection. |
-| Tính năng phỏng vấn AI | Tuần 7-8 | Phân tích CV, tạo câu hỏi, chấm điểm bằng Bedrock. |
-| Voice và admin | Tuần 9-10 | Polly, Transcribe, admin console, audit và export dữ liệu. |
-| Deploy và kiểm thử | Tuần 11 | Amplify deployment, kiểm thử end-to-end, sửa lỗi. |
-| Tài liệu và demo cuối | Tuần 12 | Nội dung workshop, trang báo cáo, demo cuối và hướng dẫn cleanup. |
+Worklog triển khai gồm 6 tuần làm việc. Trong timeline tổng thể của đồ án, tuần 1 trong file worklog được tính là tuần 7 của đồ án, sau giai đoạn nghiên cứu ban đầu và chuẩn bị proposal.
+
+| Tuần đồ án | Tuần trong worklog | Trọng tâm | Mốc hoàn thành |
+| --- | --- | --- | --- |
+| Tuần 7  Khởi tạo dự án và thiết kế kiến trúc | Phân tích yêu cầu, tạo React project, xây routing và layout cơ bản, thiết kế DynamoDB schema, chuẩn bị S3 lưu CV, xác định workflow AI và lập checklist kiến trúc AWS. |
+| Tuần 8  Đăng nhập, upload CV và lưu trữ | Hoàn thiện Login UI, tích hợp Cognito Hosted UI, làm giao diện upload CV kéo thả, viết Lambda `upload_cv`, lưu file vào S3, lưu metadata vào DynamoDB và cấu hình callback/logout URL. |
+| Tuần 9  Phân tích CV và Dashboard | Hoàn thiện Dashboard, viết Lambda `analyze_cv`, đọc CV từ S3, phân tích CV bằng Bedrock/Nova Lite, lưu skills/projects/experience/certificates và bảo vệ API bằng Cognito JWT authorizer. |
+| Tuần 10  AI Interview và chấm điểm câu trả lời | Xây giao diện AI Interview, tạo session phỏng vấn, sinh câu hỏi theo CV và role, lưu câu trả lời, chấm điểm, trả feedback, gợi ý câu trả lời tốt hơn và tính điểm tổng. |
+| Tuần 11  Voice, History, Profile, Settings và Admin | Xây trang History, Profile, Settings, viết `history_api` và `profile_api`, tích hợp Polly/Transcribe cho voice, xây Admin Console, export CSV và chuẩn bị workflow feedback email. |
+| Tuần 12  Kiểm thử, deploy, tài liệu và demo | Polish UI, kiểm thử responsive, kiểm tra API Gateway/Lambda/DynamoDB/IAM/CORS, cải thiện prompt và scoring, tổng hợp deploy guide, chụp màn hình, hoàn thiện worklog và checklist demo. |
 
 ### 8. Ước tính chi phí
 
