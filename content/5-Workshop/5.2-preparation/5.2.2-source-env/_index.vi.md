@@ -15,7 +15,7 @@ frontend/
 backend/
 ```
 
-Trong `backend/` có các Lambda:
+Trong backend có các Lambda:
 
 ```text
 upload_cv
@@ -31,7 +31,7 @@ admin_api
 
 #### Biến môi trường frontend
 
-File `frontend/.env` cần có các endpoint API và Cognito config:
+File frontend/.env cần có các endpoint API và Cognito config:
 
 ```text
 VITE_UPLOAD_CV_API_URL=https://<api-id>.execute-api.<region>.amazonaws.com/<stage>/upload_cv
@@ -56,4 +56,4 @@ npm install
 npm run dev
 ```
 
-Mở `http://localhost:5173` để kiểm tra giao diện trước khi deploy lên Amplify.
+Mở http://localhost:5173 để kiểm tra giao diện trước khi deploy lên Amplify.
