@@ -1,115 +1,146 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-07-21
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# Vertex-IntervAI / Talent Graph AI Proposal
+## AWS Serverless AI Interview Training Platform
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+
+Vertex-IntervAI is an AI-powered interview training platform that helps students and job seekers prepare for recruitment more effectively. Instead of using generic question lists, the system starts from the user's own CV, analyzes their skills and experience, generates interview questions for a selected role, evaluates answers, and returns feedback with scores and improvement suggestions.
+
+The proposed solution uses a React + Vite frontend and an AWS Serverless backend. Core services include Amazon Cognito for authentication, Amazon S3 for CV and audio storage, Amazon DynamoDB for structured data, AWS Lambda and Amazon API Gateway for backend APIs, Amazon Bedrock for CV analysis and interview intelligence, Amazon Polly for question audio, Amazon Transcribe for speech-to-text, Amazon CloudWatch for logs, and AWS Amplify Hosting for frontend deployment.
 
 ### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+#### Current Problem
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+Many students and early-career candidates prepare for interviews without personalized feedback. Public question banks are easy to find, but they do not adapt to the candidate's real CV, project experience, skill level, or target job role. Manual mock interviews also require mentors, time, and repeated scheduling, which makes frequent practice difficult.
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+#### Proposed Solution
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+Vertex-IntervAI provides a self-service interview preparation workflow:
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+- Users sign up and sign in through Amazon Cognito.
+- Users upload one or more CV files.
+- The backend stores CV files securely in Amazon S3.
+- The system analyzes CV content and extracts skills, education, projects, experience, and role suggestions.
+- Users choose a target role and number of questions.
+- The system generates interview questions based on the CV and selected role.
+- Users answer by text or microphone.
+- The backend evaluates answers and returns score, feedback, strengths, weaknesses, and advice.
+- Users can review their interview history and results later.
+- Admin users can monitor users, CVs, interviews, review queues, audit logs, and CSV exports.
+
+### 3. Project Objectives
+
+The project aims to deliver a practical AI interview training system with the following goals:
+
+- Build a complete web application for CV upload, AI interview practice, result review, and profile management.
+- Apply AWS Serverless architecture to reduce infrastructure management and keep the system scalable.
+- Use Amazon Bedrock to support CV analysis, question generation, and answer evaluation.
+- Support voice-based interview practice with Amazon Polly and Amazon Transcribe.
+- Store user data, CV metadata, interview sessions, and results in a structured and reusable way.
+- Provide an admin console for monitoring and operational management.
+- Prepare a deployment workshop that can be followed step by step on AWS.
+
+### 4. Solution Architecture
+
+The architecture separates the frontend, authentication layer, API layer, storage layer, AI services, and monitoring layer. The frontend communicates with API Gateway endpoints and passes Cognito JWT tokens for protected operations. API Gateway invokes Lambda functions, which coordinate with S3, DynamoDB, Bedrock, Polly, and Transcribe.
+
+![Vertex-IntervAI architecture](/fcj-workshop-huydat/images/2-Proposal/vertex-intervai-architecture.svg)
 
 ### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+| Service | Purpose |
+| --- | --- |
+| Amazon Cognito | Sign-up, sign-in, Hosted UI, JWT authentication, and `user/admin` authorization. |
+| Amazon S3 | Store uploaded CV files, generated audio, answer recordings, and transcript artifacts. |
+| Amazon DynamoDB | Store users, CV metadata, interview sessions, answers, scores, and history. |
+| AWS Lambda | Run backend functions for upload, CV analysis, profile, interview creation, answer scoring, voice, history, and admin operations. |
+| Amazon API Gateway | Expose REST API endpoints and protect routes with JWT authorizers and CORS configuration. |
+| Amazon Bedrock | Analyze CVs, generate interview questions, evaluate answers, and create improvement advice. |
+| Amazon Polly | Convert interview questions into audio. |
+| Amazon Transcribe | Convert candidate voice answers into text for evaluation. |
+| Amazon CloudWatch | Store logs and support debugging for Lambda and API Gateway. |
+| AWS Amplify Hosting | Build and deploy the React + Vite frontend. |
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+### 5. Component Design
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+| Component | Responsibility |
+| --- | --- |
+| Frontend | Provides login, dashboard, CV upload, interview, result, history, profile, settings, and admin pages. |
+| Authentication | Uses Cognito Hosted UI and app client configuration to manage user sessions. |
+| CV pipeline | Uploads CV files to S3, stores metadata in DynamoDB, and analyzes content through Lambda and Bedrock. |
+| Interview engine | Generates questions, receives answers, scores responses, and stores results. |
+| Voice module | Uses Polly for question audio and Transcribe for answer transcription. |
+| Admin module | Allows administrators to review users, CVs, interviews, audit logs, and exported data. |
+| Monitoring | Uses CloudWatch logs to trace API errors and backend behavior. |
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+### 6. Technical Implementation Plan
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+The workshop implementation is divided into service-based stages:
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+1. Prepare AWS Region, budget alert, source code, and environment variables.
+2. Create Cognito User Pool, App Client, Hosted UI domain, callback URLs, logout URLs, and user/admin groups.
+3. Create S3 buckets for CV and audio storage with CORS and IAM permissions.
+4. Create DynamoDB tables for `Users`, `CVs`, and `Interviews`.
+5. Deploy Lambda functions for CV, profile, history, interview, voice, and admin features.
+6. Create API Gateway routes, connect Lambda integrations, configure CORS, and add JWT authorization.
+7. Enable Amazon Bedrock model access and connect Bedrock to the AI-related Lambda functions.
+8. Configure Amazon Polly and Amazon Transcribe for voice support.
+9. Configure frontend `.env` variables and deploy the React + Vite app with Amplify Hosting.
+10. Test the user flow, admin flow, voice flow, result page, and history page.
+11. Clean up resources after the workshop to avoid unnecessary cost.
 
-Total: $0.7/month, $8.40/12 months
+### 7. Timeline and Milestones
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+| Phase | Duration | Deliverables |
+| --- | --- | --- |
+| Planning and research | Week 1-2 | Requirement analysis, AWS service selection, architecture draft. |
+| Authentication and storage | Week 3-4 | Cognito, S3, DynamoDB, basic environment configuration. |
+| Backend APIs | Week 5-6 | Lambda functions, API Gateway routes, CORS, JWT protection. |
+| AI interview features | Week 7-8 | CV analysis, question generation, answer scoring with Bedrock. |
+| Voice and admin features | Week 9-10 | Polly, Transcribe, admin console, audit and export features. |
+| Deployment and testing | Week 11 | Amplify deployment, end-to-end testing, bug fixing. |
+| Documentation and final demo | Week 12 | Workshop content, report pages, final demo, cleanup guide. |
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+### 8. Budget Estimation
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+For a student workshop and low-traffic demo, the system is designed to stay lightweight. Most services can remain low cost when the number of users, uploaded files, and AI calls are controlled.
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+| Cost Area | Notes |
+| --- | --- |
+| Lambda and API Gateway | Charged by request count and execution time; expected to be low for demo traffic. |
+| S3 | Charged by storage size and requests; CV and audio files should be cleaned up after testing. |
+| DynamoDB | On-demand usage is suitable for small demo workloads. |
+| Bedrock | Main variable cost; depends on number of CV analyses, generated questions, and answer evaluations. |
+| Polly and Transcribe | Depends on amount of generated audio and uploaded answer recordings. |
+| Amplify Hosting | Depends on build minutes, storage, and bandwidth. |
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+Cost control actions:
+
+- Set an AWS Budget alert before deployment.
+- Use a single AWS Region.
+- Limit test users and uploaded file sizes.
+- Delete test CVs, audio files, and unused resources after the workshop.
+- Stop using Bedrock/Transcribe tests once the demo is complete.
+
+### 9. Risk Assessment
+
+| Risk | Impact | Mitigation |
+| --- | --- | --- |
+| Incorrect Cognito callback/logout URL | Users cannot sign in or return to the frontend. | Verify local and Amplify URLs before testing. |
+| API Gateway CORS or JWT misconfiguration | Frontend cannot call backend APIs. | Test each route with browser dev tools and CloudWatch logs. |
+| Bedrock model access unavailable | AI analysis or scoring cannot run. | Enable model access early and keep fallback logic for demo mode. |
+| Large CV/audio files increase cost or fail upload | Higher cost and unstable demo behavior. | Add file size limits and clean up S3 test data. |
+| Voice permissions blocked by browser | Microphone flow may fail during demo. | Keep text-answer flow as a reliable backup. |
+
+### 10. Expected Outcomes
+
+After completion, Vertex-IntervAI should provide a working AI interview preparation workflow where users can sign in, upload CVs, receive AI analysis, practice interviews, answer by text or voice, view scores and feedback, and review history. The workshop also produces reusable documentation for deploying the same system on AWS Serverless infrastructure.
+
