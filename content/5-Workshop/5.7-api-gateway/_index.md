@@ -10,7 +10,7 @@ pre: " <b> 5.7. </b> "
 
 API Gateway creates HTTPS endpoints for the frontend to call backend Lambdas. It connects the React app with AWS-side processing services.
 
-![Lambda routes](/images/5-Workshop/vertex-intervai/lambda-routes.svg)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5.7.png)
 
 #### Routes overview
 
