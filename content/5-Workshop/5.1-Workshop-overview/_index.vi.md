@@ -8,7 +8,7 @@ pre: " <b> 5.1. </b> "
 
 #### Mục tiêu
 
-Phần này giới thiệu kiến trúc tổng thể của đồ án **Vertex-IntervAI**, một hệ thống luyện phỏng vấn AI dựa trên CV người dùng.
+Đồ án hướng đến việc xây dựng hệ thống hỗ trợ luyện phỏng vấn thông minh dựa trên CV cá nhân. Hệ thống sử dụng các dịch vụ AWS Serverless kết hợp với AI để phân tích CV, tạo bộ câu hỏi phỏng vấn theo vai trò, hỗ trợ trả lời bằng văn bản hoặc giọng nói, đánh giá câu trả lời và lưu lại lịch sử luyện tập. Qua đó, người dùng có thể cải thiện kỹ năng phỏng vấn, nhận biết điểm mạnh, điểm yếu và chuẩn bị tốt hơn cho quá trình tuyển dụng.
 
 ![Tổng quan kiến trúc](/images/5-Workshop/vertex-intervai/architecture.svg)
 

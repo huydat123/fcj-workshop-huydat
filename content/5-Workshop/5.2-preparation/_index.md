@@ -10,16 +10,15 @@ pre: " <b> 5.2. </b> "
 
 Prepare the AWS account, Region, budget, source code, and configuration values before deploying each service.
 
-![Service deployment map](/images/5-Workshop/vertex-intervai/services-map.svg)
 
 #### Preparation checklist
 
 | Item | Expected result |
 | --- | --- |
 | AWS account | Permission to create Cognito, S3, DynamoDB, Lambda, API Gateway, Bedrock, Polly, Transcribe, Amplify. |
-| Region | Use one consistent Region, for example `ap-southeast-1`. |
+| Region | Use one consistent Region, for example ap-southeast-1. |
 | Budget | Cost alerts to control Bedrock/Transcribe/Amplify usage. |
-| Source code | Repository contains `frontend/` and `backend/`. |
+| Source code | Repository contains frontend/ and backend/. |
 | API test tool | Postman or curl for API Gateway testing. |
 | Browser | Chrome/Edge for Cognito, microphone, and responsive UI testing. |
 

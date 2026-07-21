@@ -8,7 +8,7 @@ pre: " <b> 5.1. </b> "
 
 #### Goal
 
-This section introduces the overall architecture of **Vertex-IntervAI**, an AI interview practice system based on the user's CV.
+This project aims to build an intelligent interview training system based on personal CVs. The system uses AWS Serverless services combined with AI to analyze CVs, generate interview questions based on roles, support written or voice responses, evaluate answers, and record training history. Through this, users can improve their interview skills, identify strengths and weaknesses, and better prepare for the recruitment process.
 
 ![Architecture overview](/images/5-Workshop/vertex-intervai/architecture.svg)
 
