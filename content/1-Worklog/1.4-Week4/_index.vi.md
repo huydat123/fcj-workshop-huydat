@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 4"
-date: 2024-01-01
-weight: 1
+date: 2026-05-11
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 4: Nghiên cứu ý tưởng AI và kiến trúc serverless
 
-### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* So sánh các ý tưởng ứng dụng AI và chọn hướng phù hợp cho đồ án.
+* Nghiên cứu kiến trúc serverless với Lambda và API Gateway.
+* Thống nhất luồng chính với nhóm để chuẩn bị bước khảo sát và thiết kế.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 1 | - Thảo luận các ý tưởng AI có thể triển khai trong thời gian thực tập. | 11/05/2026 | 11/05/2026 | Team Discussion |
+| 2 | - Tìm hiểu các project mẫu về AWS Cloud kết hợp AI. | 12/05/2026 | 12/05/2026 | AWS Samples |
+| 3 | - Nghiên cứu Lambda, API Gateway và cách tách chức năng theo từng endpoint.<br>- Ghi chú ưu điểm của serverless cho đồ án sinh viên. | 13/05/2026 | 14/05/2026 | AWS Serverless Documentation |
+| 4 | - Phác thảo các module backend: upload CV, analyze CV, profile, interview, voice. | 15/05/2026 | 15/05/2026 | Project Architecture Notes |
+| 5 | - Trao đổi nhóm và thống nhất hướng triển khai tiếp theo. | 16/05/2026 | 16/05/2026 | Team Meeting Notes |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Chọn được hướng xây dựng hệ thống phỏng vấn AI dựa trên CV.
+* Hiểu cách tổ chức backend theo kiến trúc serverless.
+* Hoàn thiện danh sách module chính cần triển khai trong đồ án.

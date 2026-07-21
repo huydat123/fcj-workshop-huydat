@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 3"
-date: 2024-01-01
-weight: 1
+date: 2026-05-04
+weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 3: Thảo luận đề tài và tìm hiểu Amazon Bedrock
 
-### Mục tiêu tuần 3:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thảo luận hướng đề tài ứng dụng AI phục vụ phỏng vấn và tuyển dụng.
+* Tìm hiểu Amazon Bedrock và khả năng sử dụng mô hình AI tạo sinh.
+* Phác thảo luồng xử lý AI từ dữ liệu CV đến câu hỏi phỏng vấn.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 1 | - Trao đổi với mentor về hướng đồ án và phạm vi cần triển khai. | 04/05/2026 | 04/05/2026 | Project Meeting Notes |
+| 2 | - Tìm hiểu Amazon Bedrock, model provider và cách gọi model. | 05/05/2026 | 05/05/2026 | Amazon Bedrock Documentation |
+| 3 | - Nghiên cứu cách AI phân tích CV và sinh câu hỏi phỏng vấn.<br>- Ghi chú đầu vào, đầu ra và dữ liệu cần lưu. | 06/05/2026 | 07/05/2026 | AWS AI Documentation |
+| 4 | - Thiết kế sơ bộ luồng upload CV, phân tích CV và tạo interview. | 08/05/2026 | 08/05/2026 | Project Design Notes |
+| 5 | - Tổng hợp rủi ro kỹ thuật và câu hỏi cần xác nhận với mentor. | 09/05/2026 | 09/05/2026 | Project Planning |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Xác định được hướng đồ án Vertex-IntervAI / Talent Graph AI.
+* Nắm được vai trò của Amazon Bedrock trong phần phân tích CV và sinh câu hỏi.
+* Có bản mô tả ban đầu cho luồng xử lý AI của hệ thống.

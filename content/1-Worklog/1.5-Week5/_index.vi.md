@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 5"
-date: 2024-01-01
-weight: 1
+date: 2026-05-18
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 5: Khảo sát nhu cầu và thống nhất chủ đề đồ án
 
-### Mục tiêu tuần 5:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tiếp tục thực hành các bài lab để củng cố kiến thức AWS.
+* Khảo sát nhu cầu người dùng cho hệ thống luyện phỏng vấn bằng AI.
+* Thống nhất chủ đề, đối tượng sử dụng và chức năng trọng tâm.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 1 | - Hoàn thành thêm các bài lab liên quan đến lưu trữ và API. | 18/05/2026 | 18/05/2026 | FCJ Workshop |
+| 2 | - Khảo sát nhu cầu luyện phỏng vấn, quản lý CV và xem kết quả đánh giá. | 19/05/2026 | 19/05/2026 | Requirement Notes |
+| 3 | - Xác định nhóm người dùng chính: ứng viên và quản trị viên.<br>- Ghi chú các luồng cần có cho từng nhóm. | 20/05/2026 | 21/05/2026 | Project Requirement Notes |
+| 4 | - Thống nhất tên và hướng đồ án Vertex-IntervAI / Talent Graph AI. | 22/05/2026 | 22/05/2026 | Team Meeting Notes |
+| 5 | - Lập danh sách chức năng ưu tiên cho giai đoạn triển khai. | 23/05/2026 | 23/05/2026 | Project Backlog |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Có cơ sở nhu cầu người dùng để định hình chức năng sản phẩm.
+* Thống nhất chủ đề đồ án và phạm vi triển khai chính.
+* Tạo được backlog ban đầu cho các module frontend, backend và database.

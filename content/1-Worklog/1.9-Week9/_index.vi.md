@@ -1,59 +1,29 @@
 ---
 title: "Worklog Tuần 9"
-date: 2024-01-01
-weight: 1
+date: 2026-06-15
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 9: Phát triển phiên phỏng vấn AI và lưu câu trả lời
 
-### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng luồng tạo phiên phỏng vấn AI dựa trên CV đã phân tích.
+* Tạo API nhận câu trả lời, chấm điểm và lưu kết quả.
+* Thiết kế dữ liệu lịch sử phỏng vấn để dùng cho trang History và Result.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 1 | - Xây dựng Lambda analyze_cv đọc CV từ S3 và gọi Amazon Bedrock. | 15/06/2026 | 15/06/2026 | Amazon Bedrock Documentation |
+| 2 | - Xây dựng Lambda create_interview sinh bộ câu hỏi phỏng vấn. | 16/06/2026 | 16/06/2026 | Project Backend Notes |
+| 3 | - Thiết kế cấu trúc lưu questions, answers, attempts và score trong bảng Interviews.<br>- Chuẩn bị dữ liệu cho màn hình AI Interview. | 17/06/2026 | 18/06/2026 | DynamoDB Documentation |
+| 4 | - Xây dựng Lambda submit_answer để chấm điểm câu trả lời và lưu feedback. | 19/06/2026 | 19/06/2026 | AWS Lambda Documentation |
+| 5 | - Kiểm thử flow upload CV, analyze CV, create interview và submit answer. | 20/06/2026 | 20/06/2026 | Postman Collection |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tạo được phiên phỏng vấn AI dựa trên dữ liệu CV.
+* API chấm điểm câu trả lời đã lưu được answers, attempts và score.
+* Hoàn thành nền tảng dữ liệu cho History và Result.
