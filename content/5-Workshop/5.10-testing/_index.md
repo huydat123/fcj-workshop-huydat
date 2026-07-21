@@ -10,7 +10,6 @@ pre: " <b> 5.10. </b> "
 
 Run end-to-end tests to ensure the frontend, backend, and AWS services work together.
 
-![Testing checklist](/images/5-Workshop/vertex-intervai/testing-checklist.svg)
 
 #### Test groups
 

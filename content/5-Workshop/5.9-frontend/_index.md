@@ -10,7 +10,6 @@ pre: " <b> 5.9. </b> "
 
 Deploy the React + Vite frontend so other people can access a real HTTPS endpoint.
 
-![Frontend deployment](/images/5-Workshop/vertex-intervai/frontend-deploy.svg)
 
 #### Suggested hosting options
 

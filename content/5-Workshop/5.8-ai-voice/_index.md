@@ -10,7 +10,6 @@ pre: " <b> 5.8. </b> "
 
 Enable AI/voice services so the system can analyze CVs, generate/score interview questions, and support microphone input.
 
-![AI voice flow](/images/5-Workshop/vertex-intervai/ai-voice-flow.svg)
 
 #### Services used
 

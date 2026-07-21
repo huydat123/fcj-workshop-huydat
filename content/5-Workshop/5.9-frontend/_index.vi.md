@@ -10,7 +10,6 @@ pre: " <b> 5.9. </b> "
 
 Deploy React + Vite frontend để người khác truy cập qua endpoint HTTPS thật.
 
-![Frontend deployment](/images/5-Workshop/vertex-intervai/frontend-deploy.svg)
 
 #### Nơi deploy đề xuất
 

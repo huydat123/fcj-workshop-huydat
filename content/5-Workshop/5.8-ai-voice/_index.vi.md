@@ -10,7 +10,6 @@ pre: " <b> 5.8. </b> "
 
 Kích hoạt các service AI/voice để hệ thống có thể phân tích CV, tạo/chấm câu hỏi phỏng vấn và hỗ trợ microphone.
 
-![AI voice flow](/images/5-Workshop/vertex-intervai/ai-voice-flow.svg)
 
 #### Service sử dụng
 

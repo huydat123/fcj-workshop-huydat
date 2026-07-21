@@ -10,7 +10,6 @@ pre: " <b> 5.10. </b> "
 
 Kiểm thử end-to-end để đảm bảo frontend, backend và AWS services hoạt động đồng bộ.
 
-![Testing checklist](/images/5-Workshop/vertex-intervai/testing-checklist.svg)
 
 #### Nhóm kiểm thử
 
