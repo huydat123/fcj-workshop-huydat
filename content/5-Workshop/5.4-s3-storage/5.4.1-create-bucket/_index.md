@@ -8,7 +8,9 @@ pre: " <b> 5.4.1. </b> "
 
 #### Create bucket
 
-1. Open **Amazon S3** -> **Create bucket**.
+1. Open **Amazon S3** -> **Create bucket**
+
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/1_541.png)
 2. Use a unique bucket name, for example:
 
 ```text

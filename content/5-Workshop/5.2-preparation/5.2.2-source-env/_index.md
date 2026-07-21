@@ -23,7 +23,7 @@ The backend/ folder contains these Lambdas:
 
 frontend/.env needs API endpoints and Cognito config:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/lmoitruong522.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/moitruong522.png)
 
 
 #### Local check

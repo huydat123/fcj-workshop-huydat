@@ -23,7 +23,7 @@ Trong backend có các Lambda:
 
 File frontend/.env cần có các endpoint API và Cognito config:
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/lmoitruong522.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/moitruong522.png)
 
 #### Kiểm tra local
 

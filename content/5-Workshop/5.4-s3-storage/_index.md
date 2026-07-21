@@ -10,7 +10,7 @@ pre: " <b> 5.4. </b> "
 
 Amazon S3 stores files that should not be stored directly in the database: CVs, question audio, answer audio, and transcripts.
 
-![Storage model](/images/5-Workshop/vertex-intervai/storage-model.svg)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/5_4.png)
 
 #### Object structure
 
@@ -21,4 +21,4 @@ voice/answers/{userId}/{interviewId}/{questionIndex}.webm
 voice/transcripts/{jobName}.json
 ```
 
-The bucket is used by `upload_cv`, `analyze_cv`, `polly_speech`, `transcribe_audio`, and several admin features.
+The bucket is used by upload_cv, analyze_cv, polly_speech, transcribe_audio, and several admin features.
