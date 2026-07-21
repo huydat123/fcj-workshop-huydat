@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 17/04/2026 đến ngày 30/7/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+
 ![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/avatar.png)
 
 

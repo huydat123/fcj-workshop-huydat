@@ -31,8 +31,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 17/04/2026 to 30/7/2026
 
-![Your profile picture](/images/avatar.png)
-
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/avatar.png)
 ### Report Content
 
 1.  [Worklog](1-Worklog/)
