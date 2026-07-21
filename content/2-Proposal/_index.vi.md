@@ -85,8 +85,6 @@ Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.p
 - AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
 - MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
 
 ### 7. Đánh giá rủi ro  
 *Ma trận rủi ro*  
