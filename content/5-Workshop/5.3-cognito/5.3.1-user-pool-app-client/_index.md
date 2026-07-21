@@ -15,16 +15,18 @@ pre: " <b> 5.3.1. </b> "
 2. Choose **Create user pool**.
 
 3. For Define your application options, choose **Traditional web application**.
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194652.png)
+
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/2_531.png)
+
 4. Enable required attributes:
    * email
    * name
    * phone_number
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3_531.png)
 
 5. Use email verification.
 
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/Ảnh chụp màn hình 2026-07-21 194755.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/3_531.png)
 
 6. Create the User Pool.
 
