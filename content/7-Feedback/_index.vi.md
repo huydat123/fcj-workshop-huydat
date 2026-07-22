@@ -6,11 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-Lưu ý: Phần này là mẫu nhận xét cá nhân. Bạn nên chỉnh lại cho sát với trải nghiệm thực tế của mình trước khi nộp.
-{{% /notice %}}
-
-> Ở phần này, tôi chia sẻ cảm nhận của mình về chương trình First Cloud AI Journey dựa trên quá trình tham gia thực tế. Mục tiêu là ghi lại những điểm tốt và những điểm có thể cải thiện cho các bạn thực tập sau.
 
 ### Đánh giá chung
 
@@ -34,16 +29,18 @@ Chế độ hỗ trợ thực tập và sự linh hoạt trong quá trình làm 
 
 ### Một số câu hỏi khác
 
-- Điều bạn hài lòng nhất trong thời gian thực tập là gì?
-- Theo bạn, công ty nên cải thiện điều gì cho các bạn thực tập sinh sau?
-- Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?
+**Điều bạn hài lòng nhất trong thời gian thực tập là gì?**  
+Điều mình hài lòng nhất là được tham gia vào các công việc thực tế và học hỏi trực tiếp từ quá trình làm dự án. Bên cạnh đó, môi trường hỗ trợ tốt cũng giúp tôi thoải mái đặt câu hỏi, nhận góp ý và cải thiện từng bước.
+
+**Theo bạn, công ty nên cải thiện điều gì cho các bạn thực tập sinh sau?**  
+Công ty có thể chuẩn bị một lộ trình rõ ràng hơn ở giai đoạn đầu thực tập, bao gồm các mốc cần đạt và tài liệu gợi ý để tự học. Điều này sẽ giúp thực tập sinh dễ định hướng và theo dõi tiến độ của bản thân hơn.
+
+**Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**  
+Có, mình sẽ giới thiệu chương trình này cho các bạn khác. Đây là môi trường phù hợp để học thêm về cloud computing, cải thiện kỹ năng làm việc nhóm và hiểu rõ hơn cách một dự án thực tế được triển khai trong môi trường chuyên nghiệp.
 
 ### Góp ý
-
-- Tổ chức thêm một số buổi sinh hoạt nhóm hoặc chia sẻ không quá chính thức.
-- Tạo thêm cơ hội để thực tập sinh trình bày kết quả công việc và nhận phản hồi.
 - Tiếp tục duy trì môi trường hỗ trợ, nơi thực tập sinh có thể hỏi và học bằng cách làm.
 
 ### Kết luận
 
-Tôi rất trân trọng cơ hội được tham gia chương trình. Trải nghiệm này giúp tôi có thêm kinh nghiệm thực tế, tự tin hơn và hiểu rõ hơn cách làm việc chuyên nghiệp trong một môi trường dự án thực tế.
+Mình rất trân trọng cơ hội được tham gia chương trình. Trải nghiệm này giúp mình có thêm kinh nghiệm thực tế, tự tin hơn và hiểu rõ hơn cách làm việc chuyên nghiệp trong một môi trường dự án thực tế.

@@ -6,12 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-Note: This section is a personal reflection sample. You should adjust the wording to match your own internship experience before submitting.
-{{% /notice %}}
-
-> In this section, I share my feedback on the First Cloud AI Journey program based on my own experience. The goal is to highlight what worked well and what could be improved for future interns.
-
 ### Overall Feedback
 
 **1. Working environment**  
@@ -34,14 +28,17 @@ The internship allowance and flexible support were helpful. I also value the opp
 
 ### Additional Questions
 
-- What did you enjoy most during the internship?
-- What should the company improve for future interns?
-- Would you recommend this internship to others? Why?
+**What did you enjoy most during the internship?**  
+The part I enjoyed most was the opportunity to work on practical tasks and learn directly from real project experience. I also liked the supportive atmosphere because it made it easier for me to ask questions, receive feedback, and improve step by step.
+
+**What should the company improve for future interns?**  
+The company could provide a clearer roadmap at the beginning of the internship, including expected milestones and suggested learning resources. This would help interns understand what they should focus on and track their progress more easily.
+
+**Would you recommend this internship to others? Why?**  
+Yes, I would recommend this internship to other students. The program provides a good environment to learn cloud computing, improve teamwork skills, and experience how a real project is developed in a professional setting.
 
 ### Suggestions
 
-- Add more small group activities or informal sharing sessions.
-- Give interns more chances to present their work and receive feedback.
 - Continue creating a supportive environment where interns can ask questions and learn by doing.
 
 ### Final Note
