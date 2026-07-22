@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # Vertex-IntervAI Deployment Workshop
 
-This workshop explains how to deploy **Vertex-IntervAI / Talent Graph AI** on AWS by service. The structure follows a real deployment workshop: prepare the environment, deploy each AWS service, connect the frontend, test the system, and clean up resources.
+This workshop explains how to deploy **Vertex-IntervAI** on AWS by service. The structure follows a real deployment workshop: prepare the environment, deploy each AWS service, connect the frontend, test the system, and clean up resources.
 
 
 

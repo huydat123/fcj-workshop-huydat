@@ -12,4 +12,4 @@ pre: " <b> 5.12. </b> "
 
 #### Link Website
 
-[Click here to watch Website](https://pdtuan04.github.io/aws_workshop/)
+[Click here to watch Website](https://dat.d1610y03ud0fxp.amplifyapp.com)

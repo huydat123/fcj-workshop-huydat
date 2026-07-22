@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # Workshop triển khai Vertex-IntervAI
 
-Workshop này hướng dẫn triển khai hệ thống **Vertex-IntervAI / Talent Graph AI** lên AWS theo từng service. Cấu trúc được chia giống một workshop triển khai thật: chuẩn bị môi trường, triển khai từng dịch vụ AWS, kết nối frontend, kiểm thử và dọn dẹp tài nguyên.
+Workshop này hướng dẫn triển khai hệ thống **Vertex-IntervAI** lên AWS theo từng service. Cấu trúc được chia giống một workshop triển khai thật: chuẩn bị môi trường, triển khai từng dịch vụ AWS, kết nối frontend, kiểm thử và dọn dẹp tài nguyên.
 
 
 
