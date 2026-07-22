@@ -1,7 +1,7 @@
 ---
 title: "Student Information"
 date: 2025-07-22
-weight: 1
+weight: 8
 chapter: false
 ---
 
