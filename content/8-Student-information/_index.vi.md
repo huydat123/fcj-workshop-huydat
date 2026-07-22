@@ -3,7 +3,6 @@ title: "Thông tin sinh viên"
 date: 2026-07-22
 weight: 8
 chapter: false
-chapter: false
 pre: " <b> 8. </b> "
 ---
 
