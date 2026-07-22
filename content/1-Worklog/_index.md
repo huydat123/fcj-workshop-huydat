@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This worklog records the internship progress and the development process of **Vertex-IntervAI / Talent Graph AI** over 12 weeks, from **17 April 2026** to **12 July 2026**.
+This worklog records the internship progress and the development process of **Vertex-IntervAI** over 12 weeks, from **17 April 2026** to **12 July 2026**.
 
 The content is summarized from the internship progress report and focuses on learning AWS Cloud, researching generative AI, designing a serverless architecture, building backend/database modules, and completing the main workflows of the AI interview system.
 

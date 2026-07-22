@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-Phần worklog này ghi lại tiến độ thực tập và quá trình xây dựng đồ án **Vertex-IntervAI / Talent Graph AI** trong 12 tuần, từ ngày **17/04/2026** đến ngày **12/07/2026**.
+Phần worklog này ghi lại tiến độ thực tập và quá trình xây dựng đồ án **Vertex-IntervAI** trong 12 tuần, từ ngày **17/04/2026** đến ngày **12/07/2026**.
 
 Nội dung được tổng hợp theo phiếu tiến độ thực tập, tập trung vào quá trình học AWS Cloud, nghiên cứu AI tạo sinh, thiết kế kiến trúc serverless, xây dựng backend/database và hoàn thiện các luồng chính của hệ thống phỏng vấn AI.
 
