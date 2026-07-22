@@ -3,14 +3,12 @@ title: "Student Information"
 date: 2025-07-22
 weight: 8
 chapter: false
+pre: " <b> 8. </b> "
 ---
 
     
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
 ### Student Information:
 &emsp; **Full Name:** Nguyen Huy Dat
