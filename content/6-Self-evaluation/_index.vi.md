@@ -8,7 +8,7 @@ pre: " <b> 6. </b> "
 
 
 
-Trong suốt thời gian thực tập tại **[Amazon Web Services Vietnam Company Limited]** từ **[4/17/2026]** đến **[30/7/2026]**, em đã học hỏi và phát triển nhiều khía cạch của mình, cản thấy tự tin hơn và cải thiện nhiều kỷ năng chuyên ngành của mình.  
+Trong suốt thời gian thực tập tại Công ty TNHH Amazon Web Services Viet Nam từ 17/4/2026 đến 30/7/2026, em đã học hỏi và phát triển nhiều khía cạch của mình, cản thấy tự tin hơn và cải thiện nhiều kỷ năng chuyên ngành của mình.  
 Mình đã tham gia xây dựng lên một hệ thống Web Application trên nền tảng AWS,với nhiệm vụ làm backend và database, đồng thời tìm hiểu và sử dụng các dịch vụ của AWS, Qua đó, em đã nâng cao kiến thức về điện toán đám mây, quy trình triển khai CI/CD, cũng như cải thiện các kỹ năng thiết kế hệ thống, giải quyết vấn đề, tự học và làm việc nhóm.
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.

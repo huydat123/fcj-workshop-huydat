@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **[Amazon Web Services Vietnam Company Limited]** from **[April 17, 2026]** to **[July 30, 2026]**, I learned and developed many aspects of myself, gaining more confidence and improving my professional skills.
+During my internship at Amazon Web Services Vietnam Company Limited from 04/17/2026 to 07/30/2026, I learned and developed many aspects of myself, gaining more confidence and improving my professional skills.
 
 I participated in building a web application system on the AWS platform, with tasks related to backend and database management, and learned about and using AWS services. Through this, I enhanced my knowledge of cloud computing, CI/CD development processes, and improved my system design, problem-solving, self-learning, and teamwork skills.
 
