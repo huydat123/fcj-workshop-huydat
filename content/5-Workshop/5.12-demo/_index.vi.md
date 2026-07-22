@@ -12,5 +12,5 @@ pre: " <b> 5.12. </b> "
 
 #### Link Website
 
-[Nhấn vào đây để xem Video Demo](https://dat.d1610y03ud0fxp.amplifyapp.com/)
+[Nhấn vào đây để vào Website](https://pdtuan04.github.io/aws_workshop/)
 
