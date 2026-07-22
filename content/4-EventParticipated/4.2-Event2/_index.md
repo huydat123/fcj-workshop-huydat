@@ -19,7 +19,7 @@ pre: " <b> 4.2. </b> "
 ## Event Experience
 - After participating in the event, I was able to learn a lot about things I had never learned before and improve my listening skills.
 #### Some event photos
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6996.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6804.png)
 ![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6996.png)
 
 

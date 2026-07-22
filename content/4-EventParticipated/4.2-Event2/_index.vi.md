@@ -19,5 +19,5 @@ pre: " <b> 4.2. </b> "
 - Sau khi tham gia sự kiện mình có thể học thêm nhiều về các kiến thức chưa từng học và nghe qua năng cao kỹ năng của bản thân.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6996.png)
+![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6804.png)
 ![Cognito flow](/fcj-workshop-huydat/images/5-Workshop/service-image/6C7A6996.png)

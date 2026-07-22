@@ -8,7 +8,7 @@ pre: " <b> 5.12. </b> "
 
 #### Link Demo
 
-[Nhấn vào đây để xem Video Demo](#)
+[Click here to watch Video Demo](https://drive.google.com/drive/folders/1p6QM6_BzAKULTNWz2I3jvRX_00n6ZFLS)
 
 #### Link Website
 
