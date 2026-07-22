@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Đề xuất đồ án Vertex-IntervAI / Talent Graph AI
+# Đề xuất đồ án Vertex-IntervAI
 ## Nền tảng luyện phỏng vấn AI trên AWS Serverless
 
 ### 1. Tóm tắt tổng quan

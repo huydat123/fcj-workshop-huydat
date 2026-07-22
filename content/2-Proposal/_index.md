@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Vertex-IntervAI / Talent Graph AI Proposal
+# Vertex-IntervAI  Proposal
 ## AWS Serverless AI Interview Training Platform
 
 ### 1. Executive Summary
